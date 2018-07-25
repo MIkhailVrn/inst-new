@@ -1,0 +1,149 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*background-image: url('../img/background_1500x844.jpg');*/
+}
+
+.appWrapper {
+  /*background-image: url('../img/background_1500x844.jpg');*/
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  /*display: flex;*/
+}
+
+.searchWrapper {
+  width: 100%;
+  text-align: center;
+  will-change: transform, top;
+  transform: translate3d(0, 0, 0);
+}
+
+.searchWrapperInitial {
+  margin: 30vh auto;
+}
+
+.searchWrapperSearched {
+  margin-top: 20px;
+  -webkit-transition: margin 0.4s linear;
+  -moz-transition: margin 0.4s linear;
+  -o-transition: margin 0.4s linear;
+  transition: margin 0.4s linear;
+
+}
+
+.searchBtn {
+  margin-left: 10px;
+  margin-top: -3px;
+  display: inline-block;;
+}
+
+.searchInput {
+  width: 50%;
+  display: inline-block;;
+}
+
+.mediaCarousel {
+  margin-top: 10px;
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: inline-block;
+}
+
+.busy-active {
+  display: -webkit-box;
+}
+
+.imageCarousel {
+  max-width: 60% !important;
+}
+
+.videoCarousel {
+  max-width: 60%;
+  min-height: 400px;
+}
+
+.carouselItem {
+  text-align: -webkit-center;
+  max-height: 600px;
+}
+
+.busyIndicator {
+  text-align: -webkit-center;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tgInfo {
+  margin-left: auto;
+  width: 200px;
+  display: flex;
+  padding: 10px;
+}
+
+.tgLabel {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.tgCont {
+  display: block;
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+ 
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+ 
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+ 
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+ 
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+ 
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+ 
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+ 
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
